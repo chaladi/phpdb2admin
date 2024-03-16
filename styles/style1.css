@@ -1,0 +1,305 @@
+/* CSS Document */
+
+body{
+
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+color:#333333;
+}
+.white{
+background-color:#FFFFFF;
+}
+a img{
+border:0px;
+}
+
+*{
+margin:0px;
+padding:0px;
+}
+
+#main{
+width:100%;
+background:#FFFFFF;
+margin:auto;
+}
+
+#lpanel{
+border-right:1px dashed #FF9900;
+width:25%;
+float:left;
+background:#FFFFFF;
+}
+
+#lpanel .logo{
+margin:auto;
+width:217px;
+}
+
+#rpanel{
+width:74%;
+float:left;
+}
+.icons{
+width:230px;
+height:25px;
+
+padding-left:20px;
+}
+.icons img{
+padding-left:5px;
+}
+.install{
+width:315px;
+height:385px;
+background-color:#FFFFFF;
+margin-left:380px;
+margin-top:110px;
+}
+.install img{
+margin-left:35px;
+}
+/*for form*/
+form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:100% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 150px;
+  max-width: 310px;
+  width: 305px; 
+margin:5px 0px 0px 5px;
+}
+
+form fieldset {
+  / * clear: both; note that this clear causes inputs to break to left in ie5.x mac, commented out */
+  border-color:#000;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;        /* padding in fieldset support spotty in IE */
+  margin: 0;
+  min-height:95px;
+  height:180px;
+  
+}
+
+form fieldset legend {
+	font-size:1.1em; /* bump up legend font size, not too large or it'll overwrite border on left */
+                       /* be careful with padding, it'll shift the nice offset on top of border  */
+}
+
+form label { 
+	display: block;  /* block float the labels to left column, set a width */
+	float: left; 
+	width: 145px; 
+	padding: 0; 
+	margin: 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: right; 
+}
+
+form fieldset label:first-letter { /* use first-letter pseudo-class to underline accesskey, note that */
+	text-decoration:underline;    /* Firefox 1.07 WIN and Explorer 5.2 Mac don't support first-letter */
+                                    /* pseudo-class on legend elements, but do support it on label elements */
+                                    /* we instead underline first letter on each label element and accesskey */
+                                    /* each input. doing only legends would  lessens cognitive load */
+                                   /* opera breaks after first letter underlined legends but not labels */
+}
+
+form input, form textarea, form select {
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:auto;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 0 0 0px; /* set margin on left of form elements rather than right of label aligns textarea better in IE */
+	border-bottom-color:#663300;
+}
+
+form input#reset {
+	margin-left:0px; /* set margin-left back to zero on reset button (set above) */
+}
+
+textarea { overflow: auto; }
+
+form small {
+	display: block;
+	margin: 0 0 5px 160px; /* instructions/comments left margin set to align w/ right column inputs */
+	padding: 1px 3px;
+	font-size: 88%;
+}
+
+form .required{font-weight:bold;} /* uses class instead of div, more efficient */
+
+form br {
+	clear:left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
+}
+/*end form style*/
+
+
+
+/*table list style*/
+#list_table{
+margin:0 0 0 0;
+padding-top:0px;
+position:absolute;
+margin-top:0px;
+
+background-color:#FFFFFF;
+}
+#list_table ul{
+padding-left:10px;margin-left:5px;
+}
+#list_table ul li { border-bottom:#00CCFF; border-bottom-width:thin; padding-left:2px;}
+
+#list_table ul li a{
+line-height:10px;
+text-decoration:none;
+font-weight:bold;
+display:block;
+border-top:0px;
+color:#0080C0;
+margin-top:0px;
+padding:10px 5px 0px 2px;
+
+}
+
+/*left menu styles*/
+
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.left_menu{
+border-bottom: 1px solid #bbb8a9;
+padding-top:5px;
+
+}
+
+.left_menu{
+width:100%;
+font-size:90%;
+line-height:normal;
+overflow: hidden;
+border-bottom: 1px solid #7e9fff; /*Add border strip to bottom of menu*/
+
+}
+
+.left_menu ul{
+float:left;
+list-style-type: none;
+margin:0;
+margin-left: 5px; /*Left offset of entire tab menu relative to page*/
+padding:0;
+}
+
+.left_menu li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+.left_menu a{
+float:left;
+background:url(../images/sel_glowtab-left.gif) no-repeat left top;
+margin:0;
+margin-right: 5px; /*spacing between each tab*/
+padding:0 0 0 9px;
+text-decoration:none;
+}
+
+.left_menu a span{
+float:left;
+display:block;
+background:url(../images/r_def_img.gif) no-repeat right top;
+padding: 4px 12px 2px 3px;
+font-weight:bold;
+color:#3B3B3B;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.left_menu a span {float:none;}
+/* End IE5-Mac hack */
+
+.left_menu a:hover span {
+color: black;
+}
+
+.left_menu #current a{ /*Selected Tab style*/
+background-position:0 -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+.left_menu #current a span{ /*Selected Tab style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+color: black;
+}
+
+.left_menu a:hover{ /*onMouseover style*/
+background-position:0% -82px; /*Shift background image up to start of 2nd tab image*/
+background:url(../images/on_sel_left.gif)no-repeat left top;
+}
+
+.left_menu a:hover span{ /*onMouseover style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+background: url(../images/left_def_img.gif) no-repeat right top;
+}
+
+
+
+/*loding img styles*/
+
+#loding{
+width:251px;
+height:600px;position:absolute;
+top:0px;
+background-color:#FFFFFF;
+background-repeat:repeat;}
+#loding img{
+padding:200px 0px 100px 50px; 
+
+} 
+
+/*style for text box*/
+#search {
+		width: 281px;
+	height: 30px;
+	background:url(../images/search.png) no-repeat left top;
+	margin:5px 0 2px 25px;
+	
+}
+
+#search-input {
+	border: none;
+	width:150px;
+	height:16px;
+	
+	margin:2px 0 1px 2px;
+	padding: 2px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+/*head*/
+#head{
+width:1000px;
+height:50px;
+background-color:#00FFFF;
+}
+
+/* right frame menu style*/
+#menu{
+
+	width:1000px;height:50px;
+}
+#menu ul{
+padding:10px 0 0 30px;
+}
+#menu ul { list-style-type:none; }
+
+#menu ul li { position:relative;float:left; border-top:4px solid #efefef; margin-left:15px; padding-right: 20px; padding-top: 5px;}
+
+#menu ul .current { border-top:4px solid #3d496a;}
+
+#menu ul li:hover { border-top:4px solid #3d496a;}
+
+#menu ul li a { padding:2px 2px; text-decoration:none; font:bold 12px Verdana, Georgia, "Times New Roman", Times, serif; color:#68759c;}
+
+#menu ul li a:hover { color:#8895b8; border:none; }
+
+#menu ul li span{ display:none; position:absolute; top:20px; left:2px; width:160px; font:normal 9px Verdana, Georgia, "Times New Roman", Times, serif; line-height: 15px; }
+
+#menu ul li a:hover span {margin-top: 7px; display:block; color: #8895b8;}

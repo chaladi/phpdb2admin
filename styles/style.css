@@ -1,0 +1,187 @@
+/* CSS Document */
+body{
+
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+color:#333333;
+}
+.white{
+background-color:#FFFFFF;
+}
+a img{
+border:0px;
+}
+
+*{
+margin:0px;
+padding:0px;
+}        
+#w_a{ margin-top:5px;}
+#head{
+width:950px;
+height:70px;
+	
+}
+#head #logo{
+padding:10px 0px 0px 10px;
+width:950px;
+height:53px;
+float:left;
+}
+#menu{
+height:55px;
+width:700px;
+background-image:url(../images/header_bg.png);
+background-repeat:repeat-x;
+}
+#menu table tr td a{ text-decoration:none; font-weight:bold; color:#791D1D;}
+#menu table tr td a:hover{color:#FF0000;}
+
+/* main body style start from here*/
+ #w_a #m_body{
+width:950px;
+
+
+}
+#m_body #left{
+background-color:#FF0000;
+
+}
+#m_body #right{
+
+
+padding-left:0px;
+margin-top:0px;
+	
+}
+#m_body #l_menu{ 
+width:250px;
+height:100px;
+}
+/* ending main body style start from here*/
+
+/* foot style start here*/
+#foot{
+width:950px;
+height:30px;
+border-top:#EDD18F 3px solid;
+ text-align:center;
+ margin-top:5px;
+}
+#foot a{ font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color:#000000;
+}
+/* ending foot styles*/
+
+
+/*left menu styles*/
+
+/*URL: http://www.dynamicdrive.com/style/ */
+
+#m_body .left_menu{
+border-bottom: 1px solid #bbb8a9;
+padding-top:5px;
+
+}
+
+#m_body .left_menu{
+width:100%;
+font-size:90%;
+line-height:normal;
+overflow: hidden;
+border-bottom: 1px solid #7e9fff; /*Add border strip to bottom of menu*/
+
+}
+
+#m_body .left_menu ul{
+float:left;
+list-style-type: none;
+margin:0;
+margin-left: 5px; /*Left offset of entire tab menu relative to page*/
+padding:0;
+}
+
+#m_body .left_menu li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+#m_body .left_menu a{
+float:left;
+background:url(../images/sel_glowtab-left.gif) no-repeat left top;
+margin:0;
+margin-right: 5px; /*spacing between each tab*/
+padding:0 0 0 9px;
+text-decoration:none;
+}
+
+#m_body .left_menu a span{
+float:left;
+display:block;
+background:url(../images/r_def_img.gif) no-repeat right top;
+padding: 4px 12px 2px 3px;
+font-weight:bold;
+color:#3B3B3B;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#m_body .left_menu a span {float:none;}
+/* End IE5-Mac hack */
+
+#m_body .left_menu a:hover span {
+color: black;
+}
+
+#m_body .left_menu #current a{ /*Selected Tab style*/
+background-position:0 -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+#m_body .left_menu #current a span{ /*Selected Tab style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+color: black;
+}
+
+#m_body .left_menu a:hover{ /*onMouseover style*/
+background-position:0% -82px; /*Shift background image up to start of 2nd tab image*/
+background:url(../images/on_sel_left.gif)no-repeat left top;
+}
+
+#m_body .left_menu a:hover span{ /*onMouseover style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+background: url(../images/left_def_img.gif) no-repeat right top;
+}
+/*left menu end here*/
+/*table styles*/
+.table_style tr th,form table tr th{ 	
+	
+	border-bottom: 1px solid #DBDBDB;
+	background: #F4F4F4;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	height: 24px;
+	padding: 5px 15px;
+	color: #464032;}
+.table_style tr td,form table tr td{ 
+	border-bottom: 1px solid #DBDBDB;
+	background-color:#FFFACD;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	height: 20px;
+	padding: 2px 2px;
+	color: #464032;}
+/*ending table styles*/
+
+/* */
+.c_pad{
+padding:20px 0px 0px 20px;
+}
+.sql{ background-color:#CCCCCC; color:#663366; padding:5px 0px 5px 10px; font-weight:bold;}
+
